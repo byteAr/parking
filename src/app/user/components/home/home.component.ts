@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
       autoplay: true,
       interval: 7000, // Adjust the interval as desired
       focus: 'center', // Add this line to center the active slide
-      pagination: false,
+      pagination: true,
       mediaQuery: 'min',
 
 
