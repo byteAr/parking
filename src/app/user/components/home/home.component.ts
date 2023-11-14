@@ -1,11 +1,16 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import Splide from '@splidejs/splide';
+import {  Flowbite } from "../../../shared/decorators/flowbite";
+import { Modal } from 'flowbite'
+
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     new Splide('.splide', {
@@ -26,5 +31,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
 
   }
+
+  closeModals(){ var event = new KeyboardEvent('keydown', { key: 'Escape' }); document.body.dispatchEvent(event); }
 
 }
