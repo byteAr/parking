@@ -1,0 +1,13 @@
+.containerSlider {
+  height: 80vh;
+}
+
+@media (max-width: 800px) {
+  .containerSlider {
+    height: 30vh;
+  }
+}
+
+p {
+  text-shadow: 2px 2px 4px #666666;
+}
