@@ -6,6 +6,57 @@
   }
 } */
 
-p {
-  text-shadow: 2px 2px 4px #666666;
+/* p {
+  text-shadow: 1px 1px 1px #666666;
+} */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:12vh;
+	right:4vw;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* .mapContainer {
+  max-width: 100vw ;
+} */
+
+.containermap {
+  height: 50vh;
+}
+
+.mapouter {
+  height: 50vh;
+}
+
+.gmap_canvas {
+  height: 50vh;
+}
+
+@media (max-width: 400px) {
+  .containermap {
+    height: 20vh;
+  }
+  .mapouter {
+    height: 20vh;
+  }
+  .gmap_canvas {
+    height: 20vh;
+  }
+  .containermap {
+    height: 20vh;
+  }
+
 }
