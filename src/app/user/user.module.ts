@@ -8,6 +8,8 @@ import { GaleryComponent } from './components/galery/galery.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 
+import { NgxSplideModule } from 'ngx-splide';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
   imports: [
     CommonModule,
     UserRoutingModule,
-    SharedModule
+    SharedModule,
+    NgxSplideModule
   ]
 })
 export class UserModule { }
