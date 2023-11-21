@@ -13,7 +13,7 @@
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
       <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border  rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   dark:border-gray-700">
-        <li class="flex justify-start pl-5 md:justify-center md:pl-1 items-center">
+        <li (click)="closeModals()" data-collapse-toggle="navbar-dropdown" class="flex justify-start pl-5 md:justify-center md:pl-1 items-center">
           <img class="h-6 mr-2" src="../../../../assets/icons/header/home.svg" alt="">
           <a href="#inicio" class="block py-2 px-3 text-white  rounded md:bg-transparent md:p-0 md:dark:text-white dark:bg-blue-600 " aria-current="page">Inicio</a>
         </li>
@@ -30,9 +30,14 @@
           <a href="#" class="block py-2 px-3 text-white  rounded md:bg-transparent md:p-0 md:dark:text-white dark:bg-blue-600 " aria-current="page">Galeria</a>
         </li> -->
         <li class="flex justify-start pl-5 md:justify-center md:pl-1 items-center">
+          <img class="h-6 mr-2" src="../../../../assets/icons/header/galery.svg" alt="">
+          <a href="#galeria" class="block py-2 px-3 text-white  rounded md:bg-transparent md:p-0 md:dark:text-white dark:bg-blue-600 " aria-current="page">Galeria</a>
+        </li>
+        <li class="flex justify-start pl-5 md:justify-center md:pl-1 items-center">
           <img class="h-6 mr-2" src="../../../../assets/icons/header/opiniones.svg" alt="">
           <a href="#opiniones" class="block py-2 px-3 text-white  rounded md:bg-transparent md:p-0 md:dark:text-white dark:bg-blue-600 " aria-current="page">Opiniones</a>
         </li>
+
         <li class="flex justify-start pl-5 md:justify-center md:pl-1 items-center">
           <img class="h-6 mr-2" src="../../../../assets/icons/header/location.svg" alt="">
           <a href="#ubicacion" class="block py-2 px-3 text-white  rounded md:bg-transparent md:p-0 md:dark:text-white dark:bg-blue-600 " aria-current="page">Ubicación</a>

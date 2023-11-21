@@ -1,29 +1,15 @@
-<!-- <div class="bg-gradient-to-t from-black to-gray-700 h-auto">
-  <div class="splide md:h-full lx:h-full ">
-    <div class="splide__track md:h-full lx:h-full">
-        <ul class="splide__list">
-            <li class="splide__slide relative animate__animated animate__fadeIn">
+<section>
+  <splide class="rounded-2xl md:h-60" #mainSplide [options]="{ type: 'loop', interval: 3000, pagination: false, arrows: false,drag: true, lazyLoad: 'nearby', autoplay: true, preloadPages: 3, fixedHeight: 310 }">
+    <splide-slide *ngFor="let image of images" class="rounded-2xl">
+        <img [ngStyle]="{ 'height': '300px', 'width': '100%' }" class="object-cover md:h-80 rounded-2xl" [src]="image.src" alt="" />
+    </splide-slide>
+  </splide>
 
-                <img class="object-cover w-full" src="../../../../assets/images/IMAGE1.png" alt="">
-            </li>
-            <li class="splide__slide relative">
-                <img class="object-cover w-full " src="../../../../assets/icons/cochera.svg" alt="">
-            </li>
-            <li class="splide__slide relative">
-                <img class="object-cover w-full " src="../../../../assets/banner/BANNER3.png" alt="">
-            </li>
-        </ul>
-    </div>
-  </div>
-</div> -->
-<splide class="rounded-2xl md:h-60" #mainSplide [options]="{ type: 'loop', interval: 3000, pagination: false, arrows: false,drag: true, lazyLoad: 'nearby', autoplay: true, preloadPages: 3, fixedHeight: 310 }">
-  <splide-slide *ngFor="let image of images" class="rounded-2xl">
-      <img [ngStyle]="{ 'height': '300px', 'width': '100%' }" class="object-cover md:h-80 rounded-2xl" [src]="image.src" alt="" />
-  </splide-slide>
-</splide>
+  <splide [syncWith]="mainSplide" [options]="{ rewind: true, isNavigation: true, gap: 5, focus: 'center', pagination: false, cover: true, lazyLoad: 'nearby', preloadPages: 20, fixedWidth: 60, fixedHeight: 60 }">
+    <splide-slide *ngFor="let image of images">
+        <img  [src]="image.src" alt="" />
+    </splide-slide>
+  </splide>
+</section>
 
-<splide [syncWith]="mainSplide" [options]="{ rewind: true, isNavigation: true, gap: 5, focus: 'center', pagination: false, cover: true, lazyLoad: 'nearby', preloadPages: 20, fixedWidth: 60, fixedHeight: 60 }">
-  <splide-slide *ngFor="let image of images">
-      <img  [src]="image.src" alt="" />
-  </splide-slide>
-</splide>
+

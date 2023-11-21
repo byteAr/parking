@@ -33,6 +33,7 @@ export class GaleryComponent implements OnInit {
   ]
 
 
+
  /*  ngAfterViewInit(): void {
     new Splide('.splide', {
       type: 'loop',
