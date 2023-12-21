@@ -12,8 +12,8 @@
   </splide>
 </section>
 
-<section class="hidden md:block w-3/4 m-auto">
-  <splide class="rounded-2xl md:h-full" #mainSplide2 [options]="{ type: 'loop', interval: 3000, pagination: false, arrows: false,drag: true, lazyLoad: 'nearby', autoplay: true, preloadPages: 3, fixedHeight: 900 }">
+<section class="hidden md:block w-3/5 m-auto">
+  <splide class="rounded-2xl md:h-full" #mainSplide2 [options]="{ type: 'loop', interval: 3000, pagination: false, arrows: false,drag: true, lazyLoad: 'nearby', autoplay: true, preloadPages: 3, fixedHeight: 600 }">
     <splide-slide *ngFor="let image of images" class="rounded-2xl">
         <img [ngStyle]="{ 'height': '100%', 'width': '100%' }" class="object-cover md:h-80 rounded-2xl" [src]="image.src" alt="" />
     </splide-slide>
