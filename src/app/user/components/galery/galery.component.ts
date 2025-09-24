@@ -34,7 +34,6 @@ export class GaleryComponent implements OnInit {
     {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_3_jld3tv.jpg'},
     {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575250/WhatsApp_Image_2025-09-19_at_18.59.28_y9xn6i.jpg'},
     {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_2_l3hwxo.jpg'},
-
   ]
 
 
