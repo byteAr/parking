@@ -11,24 +11,14 @@
 } */
 
 
-/* Reserva el espacio del carousel antes de que carguen las imágenes — fix CLS */
-.splide {
-  aspect-ratio: 16 / 5;
-  overflow: hidden;
-}
-
+/* Reserva espacio mínimo antes de que Splide inicialice — evita CLS sin interferir con su layout */
 .splide__track {
-  height: 100%;
+  min-height: 180px;
 }
 
-.splide__slide img {
-  height: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .splide {
-    aspect-ratio: 4 / 3;
+@media (min-width: 768px) {
+  .splide__track {
+    min-height: 400px;
   }
 }
 
