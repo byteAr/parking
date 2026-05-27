@@ -18,8 +18,7 @@ import { Component } from '@angular/core';
               <ul class="text-gray-300 text-xl font-medium">
                 <li class="mb-4 flex justify-start md:justify-end items-center text-right">
                   <img class="w-5 mr-2" src="assets/icons/footer/email.svg" alt="" aria-hidden="true" width="20" height="20">
-                  <a href="mailto:yamila198800&#64;gmail.com" class="hover:underline text-right"
-                    aria-label="Enviar email a yamila198800 arroba gmail.com">yamila198800&#64;gmail.com</a>
+                  <a href="mailto:yamila198800&#64;gmail.com" class="hover:underline text-right">yamila198800&#64;gmail.com</a>
                 </li>
                 <li class="flex justify-start md:justify-end items-center text-right">
                   <img class="w-5 mr-2" src="assets/icons/footer/phone.svg" alt="" aria-hidden="true" width="20" height="20">
