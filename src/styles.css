@@ -37,8 +37,6 @@
 .carousel-slide {
   flex: 0 0 100%;
   scroll-snap-align: start;
-  aspect-ratio: 1677 / 938;
-  overflow: hidden;
 }
 
 .gallery-carousel {
