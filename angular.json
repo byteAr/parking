@@ -42,6 +42,8 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
+            "server": "src/main.server.ts",
+            "ssr": false,
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -49,9 +51,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"],
+            "outputMode": "static"
           },
           "configurations": {
             "production": {
