@@ -13,9 +13,9 @@ export class HomeComponent {
   private autoplayInterval: ReturnType<typeof setInterval> | null = null;
 
   readonly banners = [
-    { src: 'assets/banner/banner1.webp', alt: 'Cochera cubierta en Monte Grande cerca del Aeropuerto Internacional de Ezeiza' },
-    { src: 'assets/banner/banner2.webp', alt: 'Estacionamiento seguro con cámaras 24 horas en Monte Grande' },
-    { src: 'assets/banner/BANNER3.webp', alt: 'Servicio de traslado gratuito al Aeropuerto de Ezeiza' },
+    { src: 'assets/banner/banner1.webp', srcset: 'assets/banner/banner1-800w.webp 800w, assets/banner/banner1-1200w.webp 1200w, assets/banner/banner1.webp 1920w', alt: 'Cochera cubierta en Monte Grande cerca del Aeropuerto Internacional de Ezeiza' },
+    { src: 'assets/banner/banner2.webp', srcset: 'assets/banner/banner2-800w.webp 800w, assets/banner/banner2-1200w.webp 1200w, assets/banner/banner2.webp 1920w', alt: 'Estacionamiento seguro con cámaras 24 horas en Monte Grande' },
+    { src: 'assets/banner/banner3.webp', srcset: 'assets/banner/banner3-800w.webp 800w, assets/banner/banner3-1200w.webp 1200w, assets/banner/banner3.webp 1920w', alt: 'Servicio de traslado gratuito al Aeropuerto de Ezeiza' },
   ];
 
   readonly galleryImages = [
@@ -29,7 +29,7 @@ export class HomeComponent {
   ];
 
   readonly galleryThumbs = this.galleryImages.map(
-    url => url.replace('w_600', 'w_150')
+    url => url.replace('w_600', 'c_fill,w_150,h_150,g_auto')
   );
 
   readonly reviews = [
