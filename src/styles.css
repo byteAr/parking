@@ -37,6 +37,8 @@
 .carousel-slide {
   flex: 0 0 100%;
   scroll-snap-align: start;
+  aspect-ratio: 1677 / 938;
+  overflow: hidden;
 }
 
 .gallery-carousel {
@@ -155,7 +157,10 @@ dialog::backdrop {
   padding: 0;
   max-width: min(380px, 92vw);
   width: min(380px, 92vw);
+  max-height: 92dvh;
+  overflow: hidden;
   margin: auto;
+  border-radius: 8px;
 }
 
 .promo-dialog::backdrop {
@@ -169,8 +174,8 @@ dialog::backdrop {
 
 .promo-close-btn {
   position: absolute;
-  top: -14px;
-  right: -14px;
+  top: 10px;
+  right: 10px;
   z-index: 20;
   background: #00E5FF;
   color: #000;
@@ -197,13 +202,14 @@ dialog::backdrop {
   position: relative;
   display: block;
   line-height: 0;
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
 .promo-img {
   width: 100%;
   height: auto;
+  max-height: 92dvh;
   display: block;
 }
 

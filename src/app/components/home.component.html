@@ -22,9 +22,9 @@
   <div class="carousel" #bannerCarousel>
     @for (banner of banners; track banner.src; let i = $index) {
       <div class="carousel-slide">
-        <img class="object-cover w-full" style="min-height:180px"
+        <img class="object-cover w-full h-full"
           [src]="banner.src" [attr.srcset]="banner.srcset" [alt]="banner.alt"
-          sizes="100vw" width="1920" height="600"
+          sizes="100vw" width="1677" height="938"
           [attr.fetchpriority]="i === 0 ? 'high' : null"
           [attr.loading]="i === 0 ? 'eager' : 'lazy'">
       </div>
