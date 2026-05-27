@@ -1,0 +1,43 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-footer',
+  template: `
+    <footer class="bg-gradient-to-t from-black to-gray-700 border-gray-200 text-white mt-5" aria-label="Pie de página">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="#inicio" class="flex items-center" aria-label="Cocheras Gustavo — Ir al inicio">
+              <img src="assets/icons/cochera-white.svg" class="w-32 md:h-48 md:w-48 me-3"
+                alt="Logo Cocheras Gustavo" width="192" height="192" loading="lazy">
+            </a>
+          </div>
+          <div class="grid grid-cols-1 gap-8 sm:gap-6 text-left md:text-right">
+            <div>
+              <h2 class="mb-6 text-xl font-semibold text-white uppercase" id="contacto">Contacto</h2>
+              <ul class="text-gray-300 text-xl font-medium">
+                <li class="mb-4 flex justify-start md:justify-end items-center text-right">
+                  <img class="w-5 mr-2" src="assets/icons/footer/email.svg" alt="" aria-hidden="true" width="20" height="20">
+                  <a href="mailto:yamila198800&#64;gmail.com" class="hover:underline text-right"
+                    aria-label="Enviar email a yamila198800 arroba gmail.com">yamila198800&#64;gmail.com</a>
+                </li>
+                <li class="flex justify-start md:justify-end items-center text-right">
+                  <img class="w-5 mr-2" src="assets/icons/footer/phone.svg" alt="" aria-hidden="true" width="20" height="20">
+                  <a href="tel:+541134242400" class="hover:underline text-right"
+                    aria-label="Llamar al 11 3424-2400">11 3424-2400</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center">
+            © 2024 <span class="font-medium text-gray-400">Cocheras Gustavo — Aeropuerto Ezeiza</span>. Todos los derechos reservados.
+          </span>
+        </div>
+      </div>
+    </footer>
+  `
+})
+export class FooterComponent {}
