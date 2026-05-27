@@ -13,24 +13,21 @@ export class HomeComponent {
   private autoplayInterval: ReturnType<typeof setInterval> | null = null;
 
   readonly banners = [
-    { src: 'assets/banner/banner1.webp', srcset: 'assets/banner/banner1-600w.webp 600w, assets/banner/banner1-800w.webp 800w, assets/banner/banner1-1200w.webp 1200w, assets/banner/banner1.webp 1920w', alt: 'Cochera cubierta en Monte Grande cerca del Aeropuerto Internacional de Ezeiza' },
-    { src: 'assets/banner/banner2.webp', srcset: 'assets/banner/banner2-600w.webp 600w, assets/banner/banner2-800w.webp 800w, assets/banner/banner2-1200w.webp 1200w, assets/banner/banner2.webp 1920w', alt: 'Estacionamiento seguro con cámaras 24 horas en Monte Grande' },
+    { src: 'assets/banner/bannerpromo.webp', srcset: 'assets/banner/bannerpromo-600w.webp 600w, assets/banner/bannerpromo-800w.webp 800w, assets/banner/bannerpromo-1200w.webp 1200w, assets/banner/bannerpromo.webp 1920w', alt: 'Promoción Copa del Mundo — Descuento especial en cocheras cerca del Aeropuerto de Ezeiza' },
+    { src: 'assets/banner/banner1.webp', srcset: 'assets/banner/banner1-600w.webp 600w, assets/banner/banner1-800w.webp 800w, assets/banner/banner1-1200w.webp 1200w, assets/banner/banner1.webp 1920w', alt: 'Cochera cubierta en Ezeiza cerca del Aeropuerto Internacional' },
+    { src: 'assets/banner/banner2.webp', srcset: 'assets/banner/banner2-600w.webp 600w, assets/banner/banner2-800w.webp 800w, assets/banner/banner2-1200w.webp 1200w, assets/banner/banner2.webp 1920w', alt: 'Estacionamiento seguro con cámaras 24 horas en Ezeiza' },
     { src: 'assets/banner/banner3.webp', srcset: 'assets/banner/banner3-600w.webp 600w, assets/banner/banner3-800w.webp 800w, assets/banner/banner3-1200w.webp 1200w, assets/banner/banner3.webp 1920w', alt: 'Servicio de traslado gratuito al Aeropuerto de Ezeiza' },
   ];
 
   readonly galleryImages = [
-    'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575232/WhatsApp_Image_2025-09-19_at_18.58.41_cqplop.jpg',
-    'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.41_1_l9oorm.jpg',
-    'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.40_o2ax8n.jpg',
-    'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575251/WhatsApp_Image_2025-09-19_at_19.00.45_krdfmq.jpg',
-    'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_3_jld3tv.jpg',
-    'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575250/WhatsApp_Image_2025-09-19_at_18.59.28_y9xn6i.jpg',
-    'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_2_l3hwxo.jpg',
+    'assets/gallery/1.webp',
+    'assets/gallery/2.webp',
+    'assets/gallery/3.webp',
+    'assets/gallery/4.webp',
+    'assets/gallery/5.webp',
   ];
 
-  readonly galleryThumbs = this.galleryImages.map(
-    url => url.replace('w_600', 'c_fill,w_150,h_150,g_auto')
-  );
+  readonly galleryThumbs = this.galleryImages;
 
   readonly reviews = [
     {
@@ -84,19 +81,22 @@ export class HomeComponent {
   ];
 
   readonly faqs = [
-    { q: '¿A qué distancia están del Aeropuerto de Ezeiza?', a: 'Estamos ubicados en <strong>Av. Fair 954, Monte Grande</strong>, a tan solo <strong>5 minutos del Aeropuerto Internacional de Ezeiza (EZE)</strong>. Incluimos traslado gratuito de ida y vuelta al aeropuerto para vos y tu familia, coordinando fecha y horario con anticipación.' },
+    { q: '¿A qué distancia están del Aeropuerto de Ezeiza?', a: 'Estamos ubicados en <strong>La Valentina y Aerolíneas Argentinas, Ezeiza</strong>, a tan solo <strong>5 minutos del Aeropuerto Internacional de Ezeiza (EZE)</strong>. Incluimos traslado gratuito de ida y vuelta al aeropuerto para vos y tu familia, coordinando fecha y horario con anticipación.' },
     { q: '¿Tienen traslado gratuito al aeropuerto?', a: 'Sí. Ofrecemos <strong>traslado sin cargo</strong> desde nuestras cocheras hasta el <strong>Aeropuerto Internacional de Ezeiza</strong> y también te buscamos a tu regreso. Solo coordinamos fecha y horario por WhatsApp al <a href="tel:+541134242400" class="text-yellow-300 hover:underline">+54 11 3424-2400</a>.' },
-    { q: '¿Las cocheras tienen seguridad las 24 horas?', a: 'Sí. Nuestras <strong>cocheras cubiertas en Monte Grande</strong> cuentan con <strong>vigilancia las 24 horas</strong>, cámaras de seguridad con sensores de movimiento monitoreadas permanentemente. Tu vehículo está en las mejores manos.' },
+    { q: '¿Las cocheras tienen seguridad las 24 horas?', a: 'Sí. Nuestras <strong>cocheras cubiertas en Ezeiza</strong> cuentan con <strong>vigilancia las 24 horas</strong>, cámaras de seguridad con sensores de movimiento monitoreadas permanentemente. Tu vehículo está en las mejores manos.' },
     { q: '¿Cómo reservo una cochera?', a: 'La reserva es muy simple: escribinos por <a href="https://api.whatsapp.com/send?phone=+541134242400&text=Hola%21%20Quisiera%20reservar%20una%20cochera." target="_blank" rel="noopener noreferrer" class="text-yellow-300 hover:underline">WhatsApp al +54 11 3424-2400</a> indicando la fecha de entrada y salida. Te recomendamos reservar con anticipación para garantizar tu lugar, especialmente en temporada alta.' },
     { q: '¿Qué pasa si mi vuelo se retrasa o se cancela?', a: 'No hay problema. Tu vehículo permanece seguro en nuestras <strong>cocheras cubiertas cerca de Ezeiza</strong> hasta que regreses. Avisanos por WhatsApp y coordinamos el retiro sin inconvenientes.' },
     { q: '¿Ofrecen servicio de limpieza o mecánica para el auto?', a: 'Sí. Contamos con un servicio de <strong>limpieza y mantenimiento técnico</strong> para que cuando retires tu vehículo lo encuentres en igual o mejores condiciones. Consultanos al reservar tu cochera.' },
   ];
+
+  private promoTimer: ReturnType<typeof setTimeout> | null = null;
 
   constructor() {
     afterNextRender({
       read: () => {
         this.startAutoplay();
         this.observeFadeElements();
+        this.openPromoModal();
       }
     });
   }
@@ -136,6 +136,19 @@ export class HomeComponent {
   closeModal(id: string) {
     const dialog = document.getElementById('modal-' + id) as HTMLDialogElement;
     dialog?.close();
+  }
+
+  openPromoModal() {
+    const dialog = document.getElementById('modal-promo') as HTMLDialogElement;
+    if (!dialog) return;
+    dialog.showModal();
+    this.promoTimer = setTimeout(() => this.closePromoModal(), 10000);
+  }
+
+  closePromoModal() {
+    if (this.promoTimer) { clearTimeout(this.promoTimer); this.promoTimer = null; }
+    const dialog = document.getElementById('modal-promo') as HTMLDialogElement;
+    if (dialog?.open) dialog.close();
   }
 
   private observeFadeElements() {
