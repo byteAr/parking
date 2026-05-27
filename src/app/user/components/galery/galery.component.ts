@@ -16,24 +16,23 @@ import { NgxSplideComponent } from 'ngx-splide';
 export class GaleryComponent implements OnInit {
   @ViewChild('mainSplide') mainSplide: NgxSplideComponent | undefined;
   public images = [
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575232/WhatsApp_Image_2025-09-19_at_18.58.41_cqplop.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.41_1_l9oorm.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.40_o2ax8n.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575251/WhatsApp_Image_2025-09-19_at_19.00.45_krdfmq.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_3_jld3tv.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575250/WhatsApp_Image_2025-09-19_at_18.59.28_y9xn6i.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_2_l3hwxo.jpg'},
-
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575232/WhatsApp_Image_2025-09-19_at_18.58.41_cqplop.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.41_1_l9oorm.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.40_o2ax8n.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575251/WhatsApp_Image_2025-09-19_at_19.00.45_krdfmq.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_3_jld3tv.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575250/WhatsApp_Image_2025-09-19_at_18.59.28_y9xn6i.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_600/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_2_l3hwxo.jpg'},
   ]
   @ViewChild('mainSplide2') mainSplide2: NgxSplideComponent | undefined;
   public images2 = [
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575232/WhatsApp_Image_2025-09-19_at_18.58.41_cqplop.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.41_1_l9oorm.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.40_o2ax8n.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575251/WhatsApp_Image_2025-09-19_at_19.00.45_krdfmq.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_3_jld3tv.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575250/WhatsApp_Image_2025-09-19_at_18.59.28_y9xn6i.jpg'},
-    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_2_l3hwxo.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_150/v1758575232/WhatsApp_Image_2025-09-19_at_18.58.41_cqplop.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_150/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.41_1_l9oorm.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_150/v1758575251/WhatsApp_Image_2025-09-19_at_18.58.40_o2ax8n.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_150/v1758575251/WhatsApp_Image_2025-09-19_at_19.00.45_krdfmq.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_150/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_3_jld3tv.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_150/v1758575250/WhatsApp_Image_2025-09-19_at_18.59.28_y9xn6i.jpg'},
+    {src:'https://res.cloudinary.com/dgq2ycemj/image/upload/f_auto,q_auto,w_150/v1758575250/WhatsApp_Image_2025-09-19_at_18.58.41_2_l3hwxo.jpg'},
   ]
 
 

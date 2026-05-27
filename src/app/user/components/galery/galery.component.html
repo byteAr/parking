@@ -1,27 +1,31 @@
 <section class="md:hidden">
-  <splide class="rounded-2xl md:h-60" #mainSplide [options]="{ type: 'loop', interval: 3000, pagination: false, arrows: false,drag: true, lazyLoad: 'nearby', autoplay: true, preloadPages: 3, fixedHeight: 310 }">
-    <splide-slide *ngFor="let image of images" class="rounded-2xl">
-        <img [ngStyle]="{ 'height': '300px', 'width': '100%' }" class="object-cover md:h-80 rounded-2xl" [src]="image.src" alt="" />
+  <splide class="rounded-2xl md:h-60" #mainSplide [options]="{ type: 'loop', interval: 3000, pagination: false, arrows: false, drag: true, lazyLoad: 'nearby', autoplay: true, preloadPages: 1, fixedHeight: 310 }">
+    <splide-slide *ngFor="let image of images; let i = index" class="rounded-2xl">
+        <img [ngStyle]="{ 'height': '300px', 'width': '100%' }" class="object-cover md:h-80 rounded-2xl"
+          [src]="image.src" alt="Foto de las instalaciones de Cocheras Gustavo" width="600" height="300"
+          [attr.loading]="i === 0 ? 'eager' : 'lazy'" />
     </splide-slide>
   </splide>
 
-  <splide [syncWith]="mainSplide" [options]="{ rewind: true, isNavigation: true, gap: 5, focus: 'center', pagination: false, cover: true, lazyLoad: 'nearby', preloadPages: 20, fixedWidth: 60, fixedHeight: 60 }">
+  <splide [syncWith]="mainSplide" [options]="{ rewind: true, isNavigation: true, gap: 5, focus: 'center', pagination: false, cover: true, lazyLoad: 'nearby', preloadPages: 3, fixedWidth: 60, fixedHeight: 60 }">
     <splide-slide *ngFor="let image of images">
-        <img  [src]="image.src" alt="" />
+        <img [src]="image.src" alt="Miniatura galería" width="60" height="60" loading="lazy" />
     </splide-slide>
   </splide>
 </section>
 
 <section class="hidden md:block w-3/5 m-auto">
-  <splide class="rounded-2xl md:h-full" #mainSplide2 [options]="{ type: 'loop', interval: 3000, pagination: false, arrows: false,drag: true, lazyLoad: 'nearby', autoplay: true, preloadPages: 3, fixedHeight: 600 }">
-    <splide-slide *ngFor="let image of images" class="rounded-2xl">
-        <img [ngStyle]="{ 'height': '100%', 'width': '100%' }" class="object-cover md:h-80 rounded-2xl" [src]="image.src" alt="" />
+  <splide class="rounded-2xl md:h-full" #mainSplide2 [options]="{ type: 'loop', interval: 3000, pagination: false, arrows: false, drag: true, lazyLoad: 'nearby', autoplay: true, preloadPages: 1, fixedHeight: 600 }">
+    <splide-slide *ngFor="let image of images; let i = index" class="rounded-2xl">
+        <img [ngStyle]="{ 'height': '100%', 'width': '100%' }" class="object-cover md:h-80 rounded-2xl"
+          [src]="image.src" alt="Foto de las instalaciones de Cocheras Gustavo" width="600" height="450"
+          [attr.loading]="i === 0 ? 'eager' : 'lazy'" />
     </splide-slide>
   </splide>
 
-  <splide [syncWith]="mainSplide2" [options]="{ rewind: true, isNavigation: true, gap: 5, focus: 'center', pagination: false, cover: true, lazyLoad: 'nearby', preloadPages: 20, fixedWidth: 100, fixedHeight: 100 }">
+  <splide [syncWith]="mainSplide2" [options]="{ rewind: true, isNavigation: true, gap: 5, focus: 'center', pagination: false, cover: true, lazyLoad: 'nearby', preloadPages: 3, fixedWidth: 100, fixedHeight: 100 }">
     <splide-slide *ngFor="let image of images2">
-        <img  [src]="image.src" alt="" />
+        <img [src]="image.src" alt="Miniatura galería" width="150" height="150" loading="lazy" />
     </splide-slide>
   </splide>
 </section>
