@@ -7,9 +7,12 @@ import { Component, signal } from '@angular/core';
       class="bg-gradient-to-t from-black to-gray-700 border-gray-200 pt-2 pb-2">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#inicio" class="flex items-center space-x-3" aria-label="Cocheras Gustavo — Ir al inicio">
-          <img id="inicio" class="w-28 md:w-48" src="assets/icons/header/cochera-white.png"
-            alt="Cocheras Gustavo — Estacionamiento Aeropuerto Ezeiza" width="192" height="96"
-            fetchpriority="high">
+          <picture>
+            <source srcset="assets/icons/header/cochera-white.webp" type="image/webp">
+            <img id="inicio" class="w-28 md:w-48" src="assets/icons/header/cochera-white.png"
+              alt="Cocheras Gustavo — Estacionamiento Aeropuerto Ezeiza" width="400" height="400"
+              fetchpriority="high">
+          </picture>
         </a>
         <button type="button" (click)="toggleMenu()"
           [attr.aria-expanded]="menuOpen()"
