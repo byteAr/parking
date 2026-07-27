@@ -13,7 +13,6 @@ export class HomeComponent {
   private autoplayInterval: ReturnType<typeof setInterval> | null = null;
 
   readonly banners = [
-    { src: 'assets/banner/bannerpromo.webp', srcset: 'assets/banner/bannerpromo-600w.webp 600w, assets/banner/bannerpromo-800w.webp 800w, assets/banner/bannerpromo-1200w.webp 1200w, assets/banner/bannerpromo.webp 1920w', alt: 'Promoción Copa del Mundo — Descuento especial en cocheras cerca del Aeropuerto de Ezeiza' },
     { src: 'assets/banner/banner1.webp', srcset: 'assets/banner/banner1-600w.webp 600w, assets/banner/banner1-800w.webp 800w, assets/banner/banner1-1200w.webp 1200w, assets/banner/banner1.webp 1920w', alt: 'Cochera cubierta en Ezeiza cerca del Aeropuerto Internacional' },
     { src: 'assets/banner/banner2.webp', srcset: 'assets/banner/banner2-600w.webp 600w, assets/banner/banner2-800w.webp 800w, assets/banner/banner2-1200w.webp 1200w, assets/banner/banner2.webp 1920w', alt: 'Estacionamiento seguro con cámaras 24 horas en Ezeiza' },
     { src: 'assets/banner/banner3.webp', srcset: 'assets/banner/banner3-600w.webp 600w, assets/banner/banner3-800w.webp 800w, assets/banner/banner3-1200w.webp 1200w, assets/banner/banner3.webp 1920w', alt: 'Servicio de traslado gratuito al Aeropuerto de Ezeiza' },
@@ -89,14 +88,11 @@ export class HomeComponent {
     { q: '¿Ofrecen servicio de limpieza o mecánica para el auto?', a: 'Sí. Contamos con un servicio de <strong>limpieza y mantenimiento técnico</strong> para que cuando retires tu vehículo lo encuentres en igual o mejores condiciones. Consultanos al reservar tu cochera.' },
   ];
 
-  private promoTimer: ReturnType<typeof setTimeout> | null = null;
-
   constructor() {
     afterNextRender({
       read: () => {
         this.startAutoplay();
         this.observeFadeElements();
-        this.openPromoModal();
       }
     });
   }
@@ -136,19 +132,6 @@ export class HomeComponent {
   closeModal(id: string) {
     const dialog = document.getElementById('modal-' + id) as HTMLDialogElement;
     dialog?.close();
-  }
-
-  openPromoModal() {
-    const dialog = document.getElementById('modal-promo') as HTMLDialogElement;
-    if (!dialog) return;
-    dialog.showModal();
-    this.promoTimer = setTimeout(() => this.closePromoModal(), 10000);
-  }
-
-  closePromoModal() {
-    if (this.promoTimer) { clearTimeout(this.promoTimer); this.promoTimer = null; }
-    const dialog = document.getElementById('modal-promo') as HTMLDialogElement;
-    if (dialog?.open) dialog.close();
   }
 
   private observeFadeElements() {
