@@ -8,9 +8,9 @@ import { Component, signal } from '@angular/core';
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#inicio" class="flex items-center space-x-3" aria-label="Cocheras Gustavo — Ir al inicio">
           <picture>
-            <source srcset="assets/icons/header/cochera-white.webp" type="image/webp">
-            <img id="inicio" class="w-28 md:w-48" src="assets/icons/header/cochera-white.png"
-              alt="Cocheras Gustavo — Estacionamiento Aeropuerto Ezeiza" width="400" height="400"
+            <source srcset="assets/icons/header/logo.webp" type="image/webp">
+            <img id="inicio" class="w-28 md:w-48 h-auto object-contain" src="assets/icons/header/logo.png"
+              alt="Cocheras Gustavo — Estacionamiento Aeropuerto Ezeiza" width="408" height="284"
               fetchpriority="high">
           </picture>
         </a>

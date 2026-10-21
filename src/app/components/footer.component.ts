@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="#inicio" class="flex items-center" aria-label="Cocheras Gustavo — Ir al inicio">
-              <img src="assets/icons/cochera-white.svg" class="w-32 md:h-48 md:w-48 me-3"
-                alt="Logo Cocheras Gustavo" width="192" height="192" loading="lazy">
+              <picture>
+                <source srcset="assets/icons/logo.webp" type="image/webp">
+                <img src="assets/icons/logo.png" class="w-32 md:w-48 h-auto object-contain me-3"
+                  alt="Logo Cocheras Gustavo" width="408" height="284" loading="lazy">
+              </picture>
             </a>
           </div>
           <div class="grid grid-cols-1 gap-8 sm:gap-6 text-left md:text-right">
