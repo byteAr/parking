@@ -10,7 +10,7 @@ import { Component, signal } from '@angular/core';
           <picture>
             <source srcset="assets/icons/header/logo.webp" type="image/webp">
             <img id="inicio" class="w-28 md:w-48 h-auto object-contain" src="assets/icons/header/logo.png"
-              alt="Cocheras Gustavo — Estacionamiento Aeropuerto Ezeiza" width="408" height="284"
+              alt="Cocheras Gustavo — Estacionamiento Aeropuerto Ezeiza" width="1024" height="724"
               fetchpriority="high">
           </picture>
         </a>

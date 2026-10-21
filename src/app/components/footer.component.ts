@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
               <picture>
                 <source srcset="assets/icons/logo.webp" type="image/webp">
                 <img src="assets/icons/logo.png" class="w-32 md:w-48 h-auto object-contain me-3"
-                  alt="Logo Cocheras Gustavo" width="408" height="284" loading="lazy">
+                  alt="Logo Cocheras Gustavo" width="1024" height="724" loading="lazy">
               </picture>
             </a>
           </div>
